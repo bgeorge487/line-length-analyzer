@@ -6,7 +6,7 @@ fname = input('Enter a file name: ')
 try:
     fhand = open(fname)
 except:
-    print("File not found. Please create it or search for another file.")
+    print(f"File can't be opened: {fname}")
     exit() # exit if no file exists
 # set variables
 count = 0
@@ -24,5 +24,5 @@ for line in fhand:
         largest = len(stripped)
         longest_line = line
 # print the results
-print(f'Line: {line}\nCount: {count}\nLargest: {largest}\nLongest Line: {longest_line}')
+print(f'Lines over 40 characters: {count}\nLongest line length: {largest}\nLongest Line: {longest_line}')
 print(str(stripped))
