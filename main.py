@@ -25,4 +25,3 @@ for line in fhand:
         longest_line = line
 # print the results
 print(f'Lines over 40 characters: {count}\nLongest line length: {largest}\nLongest Line: {longest_line}')
-print(str(stripped))
